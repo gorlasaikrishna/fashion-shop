@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna's Fashion Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navigation Header */
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80') center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        /* Products Section */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #e63946;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .buy-btn:hover {
+            background-color: #1eb854;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KRISHNA FASHION</h1>
+    </header>
+
+    <div class="hero">
+        <h2>New Summer Collection</h2>
+        <p>Discover the latest trend in style and comfort</p>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Classic White T-Shirt">
+                <div class="product-info">
+                    <div class="product-title">Classic White Cotton Tee</div>
+                    <div class="product-price">₹499</div>
+                    <!-- Replace 910000000000 with your actual WhatsApp phone number including country code -->
+                    <a href="https://wa.me/910000000000?text=Hi!%20I%20want%20to%20order%20Classic%20White%20Cotton%20Tee%20(₹499)" target="_blank" class="buy-btn">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Red Sneakers">
+                <div class="product-info">
+                    <div class="product-title">Urban Red Sneakers</div>
+                    <div class="product-price">₹1,299</div>
+                    <a href="https://wa.me/910000000000?text=Hi!%20I%20want%20to%20order%20Urban%20Red%20Sneakers%20(₹1299)" target="_blank" class="buy-btn">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=600&q=80" alt="Denim Jacket">
+                <div class="product-info">
+                    <div class="product-title">Vintage Denim Jacket</div>
+                    <div class="product-price">₹1,899</div>
+                    <a href="https://wa.me/910000000000?text=Hi!%20I%20want%20to%20order%20Vintage%20Denim%20Jacket%20(₹1899)" target="_blank" class="buy-btn">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80" alt="Black Hoodie">
+                <div class="product-info">
+                    <div class="product-title">Premium Black Hoodie</div>
+                    <div class="product-price">₹999</div>
+                    <a href="https://wa.me/910000000000?text=Hi!%20I%20want%20to%20order%20Premium%20Black%20Hoodie%20(₹999)" target="_blank" class="buy-btn">
+                        Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Krishna Fashion Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
